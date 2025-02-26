@@ -1,0 +1,32 @@
+// Add this to your main.scss or create a new _footer.scss partial
+.hover-primary {
+  transition: color 0.2s ease-in-out;
+  
+  &:hover {
+    color: $primary !important;
+  }
+}
+
+footer {
+  .newsletter-section {
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  a {
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .social-links {
+    a {
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+

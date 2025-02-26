@@ -1,0 +1,52 @@
+// Custom Bootstrap theme
+$primary: #0d6efd;
+$secondary: #6c757d;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #212529;
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Custom styles
+.hero-section {
+  background: linear-gradient(135deg, #0d6efd 0%, #0099ff 100%);
+  min-height: 100vh;
+  padding: 120px 0;
+  color: white;
+}
+
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.pricing-card {
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: $primary;
+  }
+}
+
+.footer {
+  background-color: $dark;
+  color: white;
+  padding: 60px 0;
+}
+

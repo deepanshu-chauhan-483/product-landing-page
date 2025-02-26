@@ -1,0 +1,147 @@
+@import "bootstrap/scss/bootstrap";
+
+.about-us {
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container-fluid {
+    max-width: 1200px;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .content-section,
+  .image-section {
+    flex: 1; // Ensures both sections take equal space
+    max-width: 50%;
+  }
+
+  .content-section {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+    h1 {
+      font-size: 4rem; // Increased size for better balance
+      font-weight: 500;
+      margin-bottom: 2.5rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .text-content {
+      p {
+        color: #444;
+        font-size: 1.3rem; // Increased text size
+        line-height: 2;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .image-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .starburst-icon {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      width: 3rem;
+      height: 3rem;
+      z-index: 2;
+
+      .starburst {
+        fill: #000;
+      }
+    }
+
+    .about-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+// Responsive Adjustments
+@include media-breakpoint-down(lg) {
+  .about-us {
+    padding: 2rem 0;
+
+    .row {
+      flex-direction: column;
+    }
+
+    .content-section,
+    .image-section {
+      max-width: 100%; // Full width on smaller screens
+      padding: 2rem 1.5rem;
+    }
+
+    .content-section {
+      h1 {
+        font-size: 2rem; // Adjusted for smaller screens
+        margin-bottom: 2rem;
+      }
+
+      .text-content p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .image-section {
+      display: none; // Hides the image section on smaller screens
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .about-us {
+    padding: 2rem 0;
+
+    .row {
+      flex-direction: column;
+    }
+
+    .content-section,
+    .image-section {
+      max-width: 100%; // Full width on smaller screens
+      padding: 2rem 1.5rem;
+    }
+
+    .content-section {
+      h1 {
+        font-size: 2rem; // Adjusted for smaller screens
+        margin-bottom: 2rem;
+      }
+
+      .text-content p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .image-section {
+      .about-image {
+        border-radius: 8px;
+        max-height: 400px; 
+      }
+    }
+  }
+}
