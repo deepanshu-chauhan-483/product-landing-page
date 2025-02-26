@@ -71,11 +71,11 @@ A modern and minimalistic color scheme is used for better readability and aesthe
 ```
 
 ## 🚀 Deployment
-You can deploy this project on **Vercel, Netlify, or GitHub Pages**.
+Project deployed on Vercel
 
 ## 📜 License
 This project is **open-source** and available under the [MIT License](LICENSE).
 
 ---
-👨‍💻 **Developed by [Deepanshu Chauhan](#)**  *(Replace with your name and portfolio link)*
+👨‍💻 **Developed by [Deepanshu Chauhan](#)**  
 
