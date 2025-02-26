@@ -71,7 +71,7 @@ A modern and minimalistic color scheme is used for better readability and aesthe
 ```
 
 ## 🚀 Deployment
-Project deployed on Vercel
+Project deployed on Vercel  https://product-landing-page-orpin-alpha.vercel.app/
 
 ## 📜 License
 This project is **open-source** and available under the [MIT License](LICENSE).
